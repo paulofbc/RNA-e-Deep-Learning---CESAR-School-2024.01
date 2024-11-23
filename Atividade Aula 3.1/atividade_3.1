@@ -1,0 +1,25 @@
+1. Observando o gráfico de máxima probabilidade, responda:
+    1. Qual é a amostra classificada corretamente, com maior probabilidade?
+        A amostra classificada corretamente com maior probabilidade é a vermelha.
+
+    2. Qual é a amostra classificada erradamente, com maior probabilidade?
+        A verde, pois é o agrupamento de amostras que mais possui pontos que extrapolam as fronteiras traçadas pelo modelo.
+
+    3. Qual é a amostra classificada corretamente, com menor probabilidade?
+        Verde também.
+
+    4. Qual é a amostra classificada erradamente, com menor probabilidade?
+        A vermelha.
+
+2. Quantos parâmetros possui esta rede? Quantos são da camada densa e quantos são de bias?
+    Temos 9 parâmetros nesta rede onde 6 são da camada densa (os pesos - 2x3) e 3 são de bias (um para cada saída).
+
+3. Quantas entradas e quantas saídas esta rede possui?
+    Esta rede possui 2 entradas (X e Y) e 3 saídas (uma saída para cada classe).
+
+4. Como se pode calcular a acurácia a partir da matriz de confusão?
+    A forma de calcular a acurácia através da matriz de divisão é realizando a divisão do número de previsões corretas dividido pelo número total de amostras.
+    Na matriz de confusão, isso equivale à soma dos valores na diagonal principal dividida pela soma de todos os valores da matriz.
+
+5. O que faz a função `torch.max`? Quantos parâmetros ela retorna e quais seus significados?
+    A função torch.max é usada para obter a classe prevista com maior probabilidade ao retornar o maior valor em um tensor e o índice correspondente a esse maior valor.
